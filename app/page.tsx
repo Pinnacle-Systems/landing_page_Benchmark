@@ -1,7 +1,25 @@
-"use client"
+import Navbar from "@/components/navbar"
+import HeroSection from "@/components/hero-section"
+import ServicesSection from "@/components/services-section"
+import AboutSection from "@/components/about-section"
+import ProcessSection from "@/components/process-section"
+import GlobalSection from "@/components/global-section"
+import SustainabilitySection from "@/components/sustainability-section"
+import ContactSection from "@/components/contact-section"
+import Footer from "@/components/footer"
 
-import  from "../components/navbar"
-
-export default function SyntheticV0PageForDeployment() {
-  return < />
+export default function Home() {
+  return (
+    <main>
+      <Navbar />
+      <HeroSection />
+      <ServicesSection />
+      <AboutSection />
+      <ProcessSection />
+      <GlobalSection />
+      <SustainabilitySection />
+      <ContactSection />
+      <Footer />
+    </main>
+  )
 }
