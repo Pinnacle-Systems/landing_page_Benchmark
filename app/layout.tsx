@@ -3,8 +3,8 @@ import { Inter, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _inter = Inter({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const _inter = Inter({ subsets: ["latin"] })
+const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: 'Pinnacle Systems | Global Apparel Supply Chain & Manufacturing',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#0E7490',
+  themeColor: '#0F2A4A',
   userScalable: true,
 }
 

@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar"
 import HeroSection from "@/components/hero-section"
 import ServicesSection from "@/components/services-section"
+import TechnologySection from "@/components/technology-section"
 import AboutSection from "@/components/about-section"
 import ProcessSection from "@/components/process-section"
 import GlobalSection from "@/components/global-section"
@@ -14,9 +15,10 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <ServicesSection />
-      <AboutSection />
+      <TechnologySection />
       <ProcessSection />
       <GlobalSection />
+      <AboutSection />
       <SustainabilitySection />
       <ContactSection />
       <Footer />

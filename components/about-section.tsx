@@ -1,48 +1,58 @@
+"use client"
+
 import Image from "next/image"
 import { Factory, Users, Globe2, Award } from "lucide-react"
+import { useScrollAnimation, useAnimatedCounter } from "@/hooks/use-scroll-animation"
 
 const metrics = [
-  { icon: Factory, value: "12", label: "Manufacturing Facilities" },
-  { icon: Users, value: "18,000+", label: "Employees Worldwide" },
-  { icon: Globe2, value: "40+", label: "Countries Served" },
-  { icon: Award, value: "25+", label: "Years of Excellence" },
+  { icon: Factory, value: 12, label: "Manufacturing Facilities" },
+  { icon: Users, value: 18000, displayPrefix: "", displaySuffix: "+", label: "Employees Worldwide" },
+  { icon: Globe2, value: 40, displayPrefix: "", displaySuffix: "+", label: "Countries Served" },
+  { icon: Award, value: 25, displayPrefix: "", displaySuffix: "+", label: "Years of Excellence" },
 ]
 
 export default function AboutSection() {
+  const { ref, isVisible } = useScrollAnimation(0.1)
+
   return (
     <section id="about" className="bg-muted py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6">
+      <div ref={ref} className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-          <div>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">
+          <div
+            className={`transition-all duration-700 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            }`}
+          >
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-accent">
               About Pinnacle Systems
             </p>
             <h2 className="mb-6 text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
               Building the Future of Apparel Manufacturing
             </h2>
             <p className="mb-6 text-base leading-relaxed text-muted-foreground">
-              For over two decades, Pinnacle Systems has been at the forefront of global apparel manufacturing. Our vertically integrated operations span from raw material sourcing to finished goods logistics, delivering unmatched quality, speed, and transparency.
+              For over two decades, Pinnacle Systems has been at the forefront of global
+              apparel manufacturing. Our vertically integrated operations span from raw
+              material sourcing to finished goods logistics, delivering unmatched quality,
+              speed, and transparency.
             </p>
             <p className="text-base leading-relaxed text-muted-foreground">
-              We partner with the world&apos;s most demanding brands to bring their vision to life, with facilities across Asia and the Americas equipped with the latest in automated production technology.
+              We partner with the world&apos;s most demanding brands to bring their vision to
+              life, with facilities across Asia and the Americas equipped with the latest in
+              automated production technology.
             </p>
 
             <div className="mt-10 grid grid-cols-2 gap-6">
               {metrics.map((metric) => (
-                <div key={metric.label} className="flex items-start gap-3">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
-                    <metric.icon className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-xl font-bold text-foreground">{metric.value}</p>
-                    <p className="text-sm text-muted-foreground">{metric.label}</p>
-                  </div>
-                </div>
+                <MetricItem key={metric.label} metric={metric} isVisible={isVisible} />
               ))}
             </div>
           </div>
 
-          <div className="relative">
+          <div
+            className={`relative transition-all duration-700 delay-300 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
+          >
             <div className="relative overflow-hidden rounded-2xl">
               <Image
                 src="/images/about-team.jpg"
@@ -60,5 +70,30 @@ export default function AboutSection() {
         </div>
       </div>
     </section>
+  )
+}
+
+function MetricItem({
+  metric,
+  isVisible,
+}: {
+  metric: (typeof metrics)[number]
+  isVisible: boolean
+}) {
+  const rawEnd = metric.value >= 1000 ? Math.round(metric.value / 1000) : metric.value
+  const count = useAnimatedCounter(rawEnd, 2000, isVisible)
+
+  const display = metric.value >= 1000 ? `${count},000+` : `${count}${"displaySuffix" in metric ? "+" : ""}`
+
+  return (
+    <div className="flex items-start gap-3">
+      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/5">
+        <metric.icon className="h-5 w-5 text-primary" />
+      </div>
+      <div>
+        <p className="text-xl font-bold tabular-nums text-foreground">{display}</p>
+        <p className="text-sm text-muted-foreground">{metric.label}</p>
+      </div>
+    </div>
   )
 }
