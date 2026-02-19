@@ -1,101 +1,93 @@
-"use client"
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
-import { ArrowRight, Clock, Gauge, TrendingUp } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-
-const stats = [
-  {
-    icon: Gauge,
-    label: "Factory Capacity",
-    value: "2.4M",
-    unit: "units/month",
-  },
-  {
-    icon: Clock,
-    label: "Avg. Lead Time",
-    value: "21",
-    unit: "days",
-  },
-  {
-    icon: TrendingUp,
-    label: "On-Time Delivery",
-    value: "99.2",
-    unit: "%",
-  },
-]
-
-export default function HeroSection() {
+export function HeroSection() {
   return (
-    <section className="relative min-h-screen overflow-hidden pt-20">
-      <div className="absolute inset-0">
-        <Image
-          src="/images/hero-factory.jpg"
-          alt="Modern high-tech garment manufacturing facility"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-foreground/50" />
-      </div>
-
-      <div className="relative mx-auto flex min-h-[calc(100vh-5rem)] max-w-7xl flex-col justify-center px-6 py-24">
-        <div className="max-w-2xl">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-card/15 px-4 py-1.5 backdrop-blur-sm">
-            <span className="h-2 w-2 rounded-full bg-primary" />
-            <span className="text-xs font-medium tracking-wide text-card uppercase">
-              Global Manufacturing Partner
-            </span>
-          </div>
-
-          <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tight text-card sm:text-5xl lg:text-6xl text-balance">
-            Precision Apparel Manufacturing at Scale
-          </h1>
-
-          <p className="mb-8 max-w-xl text-base leading-relaxed text-card/80 sm:text-lg">
-            End-to-end supply chain solutions for the world&apos;s leading apparel brands. From concept to delivery, powered by technology and driven by quality.
-          </p>
-
-          <div className="flex flex-wrap items-center gap-4">
-            <Button size="lg" className="gap-2" asChild>
-              <a href="#contact">
-                Get Started
-                <ArrowRight className="h-4 w-4" />
-              </a>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-card/30 bg-card/10 text-card hover:bg-card/20 hover:text-card backdrop-blur-sm"
-              asChild
-            >
-              <a href="#services">Explore Services</a>
-            </Button>
-          </div>
+    <section className="relative min-h-screen pt-20">
+      <div className="grid min-h-[calc(100vh-5rem)] grid-cols-1 lg:grid-cols-2">
+        {/* Left — Image */}
+        <div className="relative h-[50vh] overflow-hidden lg:h-auto">
+          <Image
+            src="/images/hero-cotton.jpg"
+            alt="Macro close-up of organic cotton fibers showing natural texture"
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 1024px) 100vw, 50vw"
+          />
+          {/* Subtle overlay for text contrast on mobile */}
+          <div className="absolute inset-0 bg-foreground/5 lg:bg-transparent" />
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-3 lg:mt-24">
-          {stats.map((stat) => (
-            <div
-              key={stat.label}
-              className="flex items-center gap-4 rounded-xl bg-card/10 px-5 py-4 backdrop-blur-md border border-card/10"
-            >
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20">
-                <stat.icon className="h-5 w-5 text-primary" />
+        {/* Right — Content */}
+        <div className="flex flex-col justify-center px-8 py-16 lg:px-16 xl:px-24">
+          <div className="max-w-xl">
+            {/* Eyebrow */}
+            <span className="mb-6 inline-block rounded-full border border-primary/30 bg-accent px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-primary">
+              Certified Organic Manufacturing
+            </span>
+
+            {/* Headline */}
+            <h1 className="font-serif text-4xl leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl xl:text-7xl">
+              <span className="text-balance">
+                Garments crafted with purpose, not compromise
+              </span>
+            </h1>
+
+            {/* Subtitle */}
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground lg:text-xl">
+              From seed to stitch, every thread tells a story of sustainability.
+              We partner with the world&apos;s most conscious brands to produce
+              garments that honor both people and planet.
+            </p>
+
+            {/* CTAs */}
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg"
+              >
+                Request a Quote
+                <ArrowRight className="h-4 w-4" />
+              </a>
+              <a
+                href="#process"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-7 py-3.5 text-sm font-medium text-foreground transition-all hover:bg-muted"
+              >
+                Our Process
+              </a>
+            </div>
+
+            {/* Stats row */}
+            <div className="mt-14 grid grid-cols-3 gap-6 border-t border-border pt-8">
+              <div>
+                <p className="font-serif text-3xl font-semibold text-foreground lg:text-4xl">
+                  12M+
+                </p>
+                <p className="mt-1 text-xs uppercase tracking-wide text-muted-foreground">
+                  Garments Produced
+                </p>
               </div>
               <div>
-                <p className="text-xs font-medium text-card/60 uppercase tracking-wide">
-                  {stat.label}
+                <p className="font-serif text-3xl font-semibold text-foreground lg:text-4xl">
+                  98%
                 </p>
-                <p className="text-xl font-bold text-card">
-                  {stat.value}
-                  <span className="ml-1 text-sm font-normal text-card/70">{stat.unit}</span>
+                <p className="mt-1 text-xs uppercase tracking-wide text-muted-foreground">
+                  Organic Materials
+                </p>
+              </div>
+              <div>
+                <p className="font-serif text-3xl font-semibold text-foreground lg:text-4xl">
+                  0
+                </p>
+                <p className="mt-1 text-xs uppercase tracking-wide text-muted-foreground">
+                  Waste to Landfill
                 </p>
               </div>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

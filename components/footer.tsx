@@ -1,99 +1,151 @@
-import { Linkedin, Instagram } from "lucide-react"
+import { Leaf } from "lucide-react";
+import Link from "next/link";
 
-const footerLinks = {
-  company: [
-    { label: "About", href: "#about" },
-    { label: "Sustainability", href: "#sustainability" },
-    { label: "Careers", href: "#" },
-    { label: "Press", href: "#" },
-  ],
-  services: [
-    { label: "Activewear", href: "#services" },
-    { label: "Denim", href: "#services" },
-    { label: "Outerwear", href: "#services" },
-    { label: "Knitwear", href: "#services" },
-  ],
-  resources: [
-    { label: "Process", href: "#process" },
-    { label: "Global Facilities", href: "#global" },
-    { label: "Quality Standards", href: "#" },
-    { label: "Contact", href: "#contact" },
-  ],
-}
-
-export default function Footer() {
+export function Footer() {
   return (
-    <footer className="bg-foreground py-16 text-background">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-5">
-          <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-                <span className="text-sm font-bold text-primary-foreground">P</span>
-              </div>
-              <span className="text-lg font-semibold tracking-tight text-background">
-                Pinnacle Systems
+    <footer className="border-t border-border bg-muted/30 py-16">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
+          {/* Brand */}
+          <div className="md:col-span-1">
+            <Link href="/" className="flex items-center gap-2">
+              <Leaf className="h-5 w-5 text-primary" strokeWidth={1.5} />
+              <span className="text-base font-semibold text-foreground">
+                Verdana Textiles
               </span>
-            </div>
-            <p className="max-w-sm text-sm leading-relaxed text-background/60">
-              Global apparel manufacturing partner delivering precision, quality, and sustainability at scale for the world&apos;s leading brands.
+            </Link>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              Sustainable garment manufacturing rooted in transparency, fair
+              trade, and organic integrity.
             </p>
-            <div className="mt-6 flex items-center gap-4">
-              <a
-                href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-lg bg-background/10 text-background/70 transition-colors hover:bg-background/20 hover:text-background"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-4 w-4" />
-              </a>
-              <a
-                href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-lg bg-background/10 text-background/70 transition-colors hover:bg-background/20 hover:text-background"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-4 w-4" />
-              </a>
-            </div>
           </div>
 
-          {Object.entries(footerLinks).map(([heading, links]) => (
-            <div key={heading}>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-background/50">
-                {heading}
-              </h3>
-              <ul className="flex flex-col gap-3">
-                {links.map((link) => (
-                  <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-sm text-background/60 transition-colors hover:text-background"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {/* Links */}
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-widest text-foreground">
+              Company
+            </h4>
+            <nav className="mt-4 flex flex-col gap-2.5">
+              <Link
+                href="#"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                About Us
+              </Link>
+              <Link
+                href="#process"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Our Process
+              </Link>
+              <Link
+                href="#impact"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Impact Report
+              </Link>
+              <Link
+                href="#"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Careers
+              </Link>
+            </nav>
+          </div>
+
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-widest text-foreground">
+              Services
+            </h4>
+            <nav className="mt-4 flex flex-col gap-2.5">
+              <Link
+                href="#"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Private Label
+              </Link>
+              <Link
+                href="#"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Custom Development
+              </Link>
+              <Link
+                href="#"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Fabric Sourcing
+              </Link>
+              <Link
+                href="#certifications"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Certifications
+              </Link>
+            </nav>
+          </div>
+
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-widest text-foreground">
+              Connect
+            </h4>
+            <nav className="mt-4 flex flex-col gap-2.5">
+              <Link
+                href="#contact"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Request a Quote
+              </Link>
+              <Link
+                href="#"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                LinkedIn
+              </Link>
+              <Link
+                href="#"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Instagram
+              </Link>
+              <Link
+                href="mailto:hello@verdanatextiles.com"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                hello@verdanatextiles.com
+              </Link>
+            </nav>
+          </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-background/10 pt-8 md:flex-row">
-          <p className="text-xs text-background/40">
-            2026 Pinnacle Systems. All rights reserved.
+        {/* Bottom */}
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 md:flex-row">
+          <p className="text-xs text-muted-foreground">
+            &copy; {new Date().getFullYear()} Verdana Textiles. All rights
+            reserved.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-xs text-background/40 hover:text-background/60">
+            <Link
+              href="#"
+              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+            >
               Privacy Policy
-            </a>
-            <a href="#" className="text-xs text-background/40 hover:text-background/60">
+            </Link>
+            <Link
+              href="#"
+              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+            >
               Terms of Service
-            </a>
-            <a href="#" className="text-xs text-background/40 hover:text-background/60">
-              Cookie Policy
-            </a>
+            </Link>
+            <Link
+              href="#"
+              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Sustainability Report
+            </Link>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
