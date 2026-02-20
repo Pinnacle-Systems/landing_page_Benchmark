@@ -56,23 +56,7 @@ export function HeroSection() {
           </motion.p>
         </div>
 
-        {/* Scroll indicator */}
-        {/* <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.8 }}
-        className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2"
-      >
-        <a
-          href="#about"
-          className="flex flex-col items-center gap-2 text-primary-foreground/50 transition-colors hover:text-primary-foreground/80"
-          aria-label="Scroll down"
-        >
-          <span className="text-xs uppercase tracking-[0.2em]">Scroll</span>
-          <ArrowDown className="h-4 w-4 animate-bounce" />
-        </a>
-      </motion.div> */}
-        {/* Who we are bottom content */}
+      
       </section>
       <WhoWeAreSection />
     </>

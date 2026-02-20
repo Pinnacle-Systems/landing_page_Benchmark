@@ -10,22 +10,22 @@ const _playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Meridian Textiles | Premium Fabric Innovation",
+  title: "BENCHMAARK",
   description:
     "Leading supplier of sustainable fashion innovation. Full-service textile manufacturing from concept and design to production and global logistics.",
   generator: "v0.app",
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "/1.jpeg",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: "/1.jpeg",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
+        url: "/1.jpeg",
         type: "image/svg+xml",
       },
     ],

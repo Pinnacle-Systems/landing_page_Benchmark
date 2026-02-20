@@ -1,11 +1,47 @@
 "use client";
+import Image from "next/image";
+import img2 from "../public/images/img2.jpg";
+import img1 from "../public/images/img3.jpg";
 
 import { motion } from "framer-motion";
 
 export function WhoWeAreSection() {
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-orange-100  py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6 text-center">
+        {/* Top Images */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mb-12">
+          {/* Image 1 */}
+          <motion.div
+            initial={{ opacity: 0, x: -60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="flex justify-center"
+          >
+            <Image
+              src={img1}
+              alt="Benchmaark textile"
+              className="rounded-xl shadow-lg w-full max-w-md object-cover hover:scale-105 transition duration-500"
+              priority
+            />
+          </motion.div>
+
+          {/* Image 2 */}
+          <motion.div
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="flex justify-center"
+          >
+            <Image
+              src={img2}
+              alt="Benchmaark production"
+              className="rounded-xl shadow-lg w-full max-w-md object-cover hover:scale-105 transition duration-500"
+              priority
+            />
+          </motion.div>
+        </div>
+
         {/* Small title */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -15,7 +51,6 @@ export function WhoWeAreSection() {
         >
           Who we are
         </motion.p>
-
         {/* Main title */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -25,7 +60,6 @@ export function WhoWeAreSection() {
         >
           Let Brands Focus on Sales. Benchmaark Takes Care of Everything Else.
         </motion.h2>
-
         {/* Description */}
         <motion.p
           initial={{ opacity: 0 }}
@@ -38,32 +72,45 @@ export function WhoWeAreSection() {
           exposure, techno-commercial expertise, market intelligence, and the
           support of cutting-edge technologies.
         </motion.p>
-
         {/* Features */}
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
-          <div className="flex h-full flex-col items-center justify-center rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm transition hover:shadow-lg hover:-translate-y-1 hover:border-black">
-            <p className="text-sm font-semibold text-gray-900">
-              Leveraging Global Exposure
-            </p>
-          </div>
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {[
+            "Leveraging Global Exposure",
+            "Techno Commercial Expertise",
+            "Market Intelligence",
+            "Cutting Edge Technology",
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="
+    group
+    flex h-full items-center justify-center
+    rounded-xl
+    border border-gray-200
+    bg-[#822121]
+    p-6
+    text-center
+    shadow-sm
 
-          <div className="flex h-full flex-col items-center justify-center rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm transition hover:shadow-lg hover:-translate-y-1 hover:border-black">
-            <p className="text-sm font-semibold text-gray-900">
-              Techno Commercial Expertise
-            </p>
-          </div>
+    transition-all duration-500 ease-out
+    hover:shadow-2xl
+    hover:-translate-y-2
+    hover:scale-[1.04]
+  "
+            >
+              <p
+                className="
+      text-sm font-semibold
+      text-white
+      leading-snug
 
-          <div className="flex h-full flex-col items-center justify-center rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm transition hover:shadow-lg hover:-translate-y-1 hover:border-black">
-            <p className="text-sm font-semibold text-gray-900">
-              Market Intelligence
-            </p>
-          </div>
-
-          <div className="flex h-full flex-col items-center justify-center rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm transition hover:shadow-lg hover:-translate-y-1 hover:border-black">
-            <p className="text-sm font-semibold text-gray-900">
-              Cutting Edge Technology
-            </p>
-          </div>
+      transition-colors duration-500
+    "
+              >
+                {item}
+              </p>
+            </div>
+          ))}
         </div>
         {/* Why BenchMaark Section */}
         <motion.div
@@ -104,9 +151,33 @@ export function WhoWeAreSection() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="flex h-full min-h-[140px] items-center justify-center rounded-xl border border-gray-200 bg-white p-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-black"
+                className="
+    group
+    flex h-full items-center justify-center
+    rounded-xl
+    border border-gray-200
+    bg-[#822121]
+    p-6
+    text-center
+    shadow-sm
+
+    transition-all duration-500 ease-out
+
+    
+    hover:shadow-xl
+    hover:-translate-y-2
+    hover:scale-[1.04]
+  "
               >
-                <p className="text-sm font-semibold text-gray-900 leading-snug">
+                <p
+                  className="
+      text-sm font-semibold
+      leading-snug
+
+      transition-colors duration-500
+     text-white
+    "
+                >
                   {item}
                 </p>
               </div>

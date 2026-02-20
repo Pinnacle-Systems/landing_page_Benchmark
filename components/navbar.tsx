@@ -1,9 +1,9 @@
 "use client";
-
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import Logo from "../public/images/bmlogo.png";
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
@@ -31,20 +31,19 @@ export function Navbar() {
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-background/95 shadow-sm backdrop-blur-md"
+          ? "bg-background shadow-sm backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="/" className="flex items-center gap-2">
-          <span
-            className={`font-serif text-xl font-bold tracking-tight transition-colors duration-500 ${
-              scrolled ? "text-foreground" : "text-primary-foreground"
-            }`}
-          >
-            Benchmaark
-          </span>
-        
+      <nav className="mx-auto flex max-w-7xl items-center  justify-between px-6 py-4 lg:px-8">
+        <a href="#home" className="flex  items-center gap-2">
+         
+            <Image
+              src={Logo}
+              alt="Logo"
+              className="h-20 bg-white w-auto"
+              priority
+            />{" "}
         </a>
 
         {/* Desktop nav */}
@@ -75,7 +74,8 @@ export function Navbar() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.5 }}
-          className="hidden rounded-sm bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground transition-opacity hover:opacity-90 lg:inline-block"
+          className="hidden  rounded-sm     bg-[#822121]
+ px-5 py-2.5 text-sm font-semibold text-accent-foreground transition-opacity hover:opacity-90 lg:inline-block"
         >
           Get in Touch
         </motion.a>
