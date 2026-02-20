@@ -1,117 +1,159 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
-
-const stats = [
-  { value: "2005", label: "Established" },
-  { value: "500+", label: "Team Members" },
-  { value: "30+", label: "Global Clients" },
-  { value: "6", label: "International Offices" },
-];
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.6, delay: i * 0.1 },
   }),
 };
 
 export function AboutSection() {
   return (
-    <section id="about" className="bg-background py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        {/* Section label */}
+    <section id="about" className="bg-gray-100 text-black py-24">
+      <div className="mx-auto max-w-7xl px-6 space-y-32">
+        {/* STORY */}
+
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="mb-16"
+          className="text-center  mx-auto"
         >
-          <motion.p
-            variants={fadeUp}
-            custom={0}
-            className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-accent"
-          >
-            Who We Are
-          </motion.p>
           <motion.h2
             variants={fadeUp}
-            custom={1}
-            className="font-serif text-3xl font-bold tracking-tight text-foreground md:text-5xl text-balance"
+            custom={0}
+            className="text-4xl font-bold mb-6"
           >
-            Recognized as the No. 1<br />
-            Innovators in Circular Knit
+            The BenchMaark Story
           </motion.h2>
+
+          <motion.p
+            variants={fadeUp}
+            custom={1}
+            className="text-lg text-gray-700 leading-relaxed w-full"
+          >
+            We provide a one-stop solution for all your clothing and product
+            sourcing needs, giving you a complete 360° service from design to
+            delivery across the entire supply chain. Our experienced teams are
+            located across India, Bangladesh, Dubai, Turkey, and the UK,
+            offering everything from creative design to efficient global
+            shipping.
+          </motion.p>
         </motion.div>
 
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
-          {/* Image */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="relative aspect-[4/3] overflow-hidden rounded-sm"
-          >
-            <Image
-              src="/images/about-factory.jpg"
-              alt="Modern textile manufacturing facility"
-              fill
-              className="object-cover"
-            />
+        {/* FLEX SECTION */}
+
+        <div className="flex flex-col lg:flex-row gap-16">
+          {/* Vision */}
+
+          <motion.div initial="hidden" whileInView="visible" className="flex-1">
+            <h3 className="text-3xl font-bold mb-8">Our Vision and Values</h3>
+
+            <div className="space-y-6">
+              {[
+                "One team, one vision: we can achieve more together",
+                "Sustainable and socially responsible: respect for environment, community and economy",
+                "Customer centric:The customer is at the heart of all we do",
+                "Transparent And Honest In Driving The Success Of The Entire Supply Chain",
+                "Innovation And Technology: Committed To The Future Of Supply Chain Management",
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  variants={fadeUp}
+                  custom={i}
+                  className="flex gap-4"
+                >
+                  <span className="font-bold text-black">■</span>
+                  <p className="text-gray-700">{item}</p>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
 
-          {/* Text + Stats */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            className="flex flex-col justify-center"
-          >
-            <motion.p
-              variants={fadeUp}
-              custom={0}
-              className="text-lg leading-relaxed text-muted-foreground"
-            >
-              We are a fast-growing organization led by experienced partners and
-              skilled professionals for the production of all types of knitted
-              garments. From perfecting circular knit fabrics, we have evolved
-              into leading suppliers, continuously developing new fabrics,
-              finishes, and products tailored to our clients&apos; needs.
-            </motion.p>
-            <motion.p
-              variants={fadeUp}
-              custom={1}
-              className="mt-4 text-lg leading-relaxed text-muted-foreground"
-            >
-              Our commitment to quality, reliability, and sustainability drives
-              every decision we make, ensuring we deliver exceptional value from
-              concept to final product.
-            </motion.p>
+          {/* Experts */}
 
-            {/* Stats grid */}
-            <div className="mt-10 grid grid-cols-2 gap-6">
-              {stats.map((stat, i) => (
+          <motion.div initial="hidden" whileInView="visible" className="flex-1">
+            <h3 className="text-3xl font-bold mb-8">We're Experts In</h3>
+
+            <div className="space-y-4">
+              {[
+                "Solutions for complex supply chains",
+                "Bespoke product design",
+                "Quick deliveries for speed to market",
+                "Adapting to changing market trends",
+                "Innovation and technology-driven solutions",
+              ].map((item, i) => (
                 <motion.div
-                  key={stat.label}
+                  key={i}
                   variants={fadeUp}
-                  custom={i + 2}
-                  className="border-l-2 border-accent pl-4"
+                  custom={i}
+                  className="flex gap-4"
                 >
-                  <p className="font-serif text-3xl font-bold text-foreground">
-                    {stat.value}
-                  </p>
-                  <p className="mt-1 text-sm font-medium text-muted-foreground">
-                    {stat.label}
-                  </p>
+                  <span className="font-bold text-black">■</span>
+
+                  <p className="text-gray-700">{item}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Culture */}
+
+          <motion.div initial="hidden" whileInView="visible" className="flex-1">
+            <h3 className="text-3xl font-bold mb-8">Our People / Culture</h3>
+
+            <div className="space-y-4">
+              {[
+                "We Pride Ourselves On Our People Powered Culture",
+                "We Are A Dynamic, Vibrant And Multicultural Team",
+                "Customer Success Is At The Core Of Everything We Do",
+                "Taking Business Seriously, Always With A Smile!",
+                "Innovation Leads Us, And Teamwork Strengthens Us",
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  variants={fadeUp}
+                  custom={i}
+                  className="flex gap-4"
+                >
+                  <span className="font-bold text-black">■</span>
+
+                  <p className="text-gray-700">{item}</p>
                 </motion.div>
               ))}
             </div>
           </motion.div>
         </div>
+
+        {/* Promise */}
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          className="text-center"
+        >
+          <h3 className="text-3xl font-bold mb-8">Our Promise To You</h3>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              "Transparent and flexible services",
+              "Attention to detail and quality",
+              "Strong relationships through the supply chain that add value",
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                variants={fadeUp}
+                custom={i}
+                className="border border-gray-300 bg-white p-6 rounded-xl hover:bg-black hover:text-white transition duration-300 shadow-sm hover:shadow-lg"
+              >
+                {item}
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,115 +1,120 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 
-const steps = [
+const apparels = [
   {
     number: "01",
-    title: "Design & Sketch",
+    title: "Men’s Clothing",
     description:
-      "Crafting innovative designs with trend research, mood boards, and detailed technical sketches tailored to your brand.",
+      "We Specialise In Menswear And Proudly Collaborate With Some Of The Most Recognised Brands Worldwide.Our Expertise Spans Wovens, Denim, Jersey, Sleepwear, And Essentials, Delivering Products For Designer Labels As Well As Global Brand Merchandise.With Strategic Manufacturing Bases In India And Bangladesh, We Are Equipped To Serve All Market Segments, Delivering Comprehensive Solutions That Ensure Smooth, Efficient, And Reliable Retail Delivery Management.",
   },
   {
     number: "02",
-    title: "Fabric Development",
+    title: "Women’s Clothing",
     description:
-      "Developing premium fabrics from fiber to yarn with sustainable methods and cutting-edge textile technology.",
+      "From Entry-Level Price Points To Premium Boutique Collections, We Offer A Complete Range Of Products. Whether It'S Wovens, Denim, Jersey, Knitwear, Or Occasion Wear, Our Clients Trust Us To Design, Develop, And Deliver The Right Product At The Right Price For Their Market.Our Designers Are Among The Best In The Industry, Bringing Sharp Trend Awareness And Meticulous Attention To Detail While Staying True To Each Brand’S Unique Handwriting.Whether Catering To Plus-Size Or Petite, Basics Or Embellished Designs, We Are Your Dependable Private-Label Clothing Manufacturer For A Complete, End-To-End Solution.",
   },
   {
     number: "03",
-    title: "Sample Making",
+    title: "Children’s Clothing",
     description:
-      "Creating precise fabric samples and prototypes to match design specifications with complete accuracy.",
+      "With Extensive Experience In Childrenswear, We Proudly Partner With Many Globally Recognised And Respected Brands.Our Expertise Spans Newborn To Teen Categories, Supported By A Dedicated Team Of Designers And Product Developers Who Ensure Every Style Meets All Technical Specifications And Adheres To The Required Safety And Legal Standards.This Department Covers A Comprehensive Range Of Products, Including Wovens, Knitwear, Jersey, Essentials And Sleepwear.",
   },
   {
     number: "04",
-    title: "Production",
+    title: "Infant Wear",
     description:
-      "Expert manufacturing with advanced machinery, skilled artisans, and rigorous quality controls at every step.",
-  },
-  {
-    number: "05",
-    title: "Quality & Delivery",
-    description:
-      "Thorough inspection to guarantee exceptional standards, followed by polished finishing, packing, and global logistics.",
+      "Our Deep Expertise In Infant Wear Has Allowed Us To Partner With Some Of The Most Globally Recognised And Respected Brands.Our Skilled Team Of Designers And Product Developers Oversees Garments From Newborn Through Teen Sizes, Ensuring Each Piece Complies With The Highest Safety, Technical, And Regulatory Requirements Of Childrenswear.Our Comprehensive Range Spans Wovens, Knitwear, Jersey Essentials, Sleepwear, And Partywear—Crafted To Provide Superior Comfort, Quality, And Style For Every Stage And Occasion.",
   },
 ];
 
-const stepVariants = {
-  hidden: { opacity: 0, x: -30 },
+const homeTextiles = [
+  {
+    number: "05",
+    title: "Home Textiles",
+    description:
+      "Our Home Textiles Portfolio Features Premium Organic Cotton Products, Including Sheet Sets, Duvets, Shams, And Pillowcases Offered In Thread Counts From 200 To 600, Alongside Plush Towels Ranging From 400 To 800 GSM.Our Capabilities Extend To Jersey Sheet Sets, Duvets, And Shams, Along With Premium Flannel Bedding Collections.In Addition, We Produce Luxurious Robes In Terry, Waffle, And Interlock Constructions, Complemented By An Elegant Selection Of Throws And Blankets Crafted In A Variety Of Refined Weaves.",
+  },
+];
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
   visible: (i: number) => ({
     opacity: 1,
-    x: 0,
-    transition: { duration: 0.5, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] },
+    y: 0,
+    transition: { duration: 0.5, delay: i * 0.1 },
   }),
 };
 
 export function ProcessSection() {
   return (
-    <section id="process" className="bg-background py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-16"
-        >
-          <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-accent">
-            Our Process
-          </p>
-          <h2 className="font-serif text-3xl font-bold tracking-tight text-foreground md:text-5xl text-balance">
-            From Concept to Collection
-          </h2>
-        </motion.div>
+    <section id="process" className="bg-gray-100 py-24 lg:py-32">
+      <div className="mx-auto max-w-6xl px-4 md:px-6">
+        {/* APPARELS */}
 
-        <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
-          {/* Steps */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            className="flex flex-col gap-6"
-          >
-            {steps.map((step, i) => (
-              <motion.div
-                key={step.number}
-                variants={stepVariants}
-                custom={i}
-                whileHover={{ x: 8, transition: { duration: 0.2 } }}
-                className="group flex gap-6 rounded-sm border border-border bg-card p-6 transition-colors hover:border-accent/40"
-              >
-                <span className="font-serif text-4xl font-bold text-accent/30 transition-colors group-hover:text-accent">
-                  {step.number}
-                </span>
-                <div>
-                  <h3 className="mb-2 text-lg font-semibold text-card-foreground">
-                    {step.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-muted-foreground">
-                    {step.description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-10 md:mb-14">
+          Apparels
+        </h2>
 
-          {/* Side image */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="relative hidden overflow-hidden rounded-sm lg:block"
-          >
-            <Image
-              src="/images/design-studio.jpg"
-              alt="Fashion design studio workspace"
-              fill
-              className="object-cover"
-            />
-          </motion.div>
+        {/* 2 x 2 GRID */}
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+          {apparels.map((item, i) => (
+            <motion.div
+              key={item.number}
+              variants={cardVariants}
+              initial="hidden"
+              whileInView="visible"
+              custom={i}
+              whileHover={{ y: -6 }}
+              className="bg-white p-5 md:p-6 lg:p-8 rounded-lg shadow-sm hover:shadow-lg transition"
+            >
+              <span className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200">
+                {item.number}
+              </span>
+
+              <h3 className="text-base md:text-lg lg:text-xl font-semibold mt-3 mb-2">
+                {item.title}
+              </h3>
+
+              <p className="text-xs md:text-sm lg:text-base text-gray-600 leading-relaxed">
+                {item.description}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* HOME TEXTILES */}
+
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mt-16 mb-10 md:mb-14">
+          Home Textiles
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+          {homeTextiles.map((item, i) => (
+            <motion.div
+              key={item.number}
+              variants={cardVariants}
+              initial="hidden"
+              whileInView="visible"
+              custom={i}
+              whileHover={{ y: -6 }}
+              className="bg-white p-5 md:p-6 lg:p-8 rounded-lg shadow-sm hover:shadow-lg transition"
+            >
+              <span className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200">
+                {item.number}
+              </span>
+
+              <h3 className="text-base md:text-lg lg:text-xl font-semibold mt-3 mb-2">
+                {item.title}
+              </h3>
+
+              <p className="text-xs md:text-sm lg:text-base text-gray-600 leading-relaxed">
+                {item.description}
+              </p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

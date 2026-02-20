@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
-
+import { Poppins } from "next/font/google";
 const _inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const _playfair = Playfair_Display({
   subsets: ["latin"],
@@ -32,7 +32,11 @@ export const metadata: Metadata = {
     apple: "/apple-icon.png",
   },
 };
-
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
+});
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -40,7 +44,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased">
+      {/* <body className="font-sans antialiased"> */}
+      <body  className={poppins.className}>
         {children}
         <Analytics />
       </body>

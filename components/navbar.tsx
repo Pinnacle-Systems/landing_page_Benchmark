@@ -5,9 +5,10 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
+  { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Process", href: "#process" },
+  { label: "Our Services", href: "#services" },
+  { label: "Product Divisions", href: "#process" },
   { label: "Sustainability", href: "#sustainability" },
   { label: "Global", href: "#global" },
   { label: "Contact", href: "#contact" },
@@ -35,21 +36,15 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="#" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <span
             className={`font-serif text-xl font-bold tracking-tight transition-colors duration-500 ${
               scrolled ? "text-foreground" : "text-primary-foreground"
             }`}
           >
-            MERIDIAN
+            Benchmaark
           </span>
-          <span
-            className={`text-xs font-medium uppercase tracking-[0.25em] transition-colors duration-500 ${
-              scrolled ? "text-muted-foreground" : "text-primary-foreground/70"
-            }`}
-          >
-            Textiles
-          </span>
+        
         </a>
 
         {/* Desktop nav */}

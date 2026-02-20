@@ -10,16 +10,16 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Navbar />
       <HeroSection />
-      <AboutSection />
-      <ServicesSection />
-      <ProcessSection />
-      <SustainabilitySection />
-      <GlobalSection />
-      <ContactSection />
+      {/* <AboutSection /> */}
+      {/* <ServicesSection /> */}
+      {/* <ProcessSection /> */}
+      {/* <SustainabilitySection /> */}
+      {/* <GlobalSection /> */}
+      {/* <ContactSection /> */}
       <Footer />
-    </main>
+    </>
   );
 }
