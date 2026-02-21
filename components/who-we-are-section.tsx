@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import img2 from "../public/images/img2.jpg";
-import img1 from "../public/images/img3.jpg";
+import img2 from "../public/images/knittedimage.jpg";
+import img1 from "../public/images/sewing4.png";
 
 import { motion } from "framer-motion";
 
@@ -87,7 +87,7 @@ export function WhoWeAreSection() {
     flex h-full items-center justify-center
     rounded-xl
     border border-gray-200
-    bg-[#822121]
+    bg-[#9C6237]
     p-6
     text-center
     shadow-sm
@@ -156,7 +156,7 @@ export function WhoWeAreSection() {
     flex h-full items-center justify-center
     rounded-xl
     border border-gray-200
-    bg-[#822121]
+    bg-[#9C6237]
     p-6
     text-center
     shadow-sm

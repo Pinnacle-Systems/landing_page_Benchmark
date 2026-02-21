@@ -74,7 +74,7 @@ export function Navbar() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.5 }}
-          className="hidden  rounded-sm     bg-[#822121]
+          className="hidden  rounded-sm     bg-[#9C6237]
  px-5 py-2.5 text-sm font-semibold text-accent-foreground transition-opacity hover:opacity-90 lg:inline-block"
         >
           Get in Touch
