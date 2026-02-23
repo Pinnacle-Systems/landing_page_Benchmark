@@ -29,7 +29,7 @@ const stepVariants = {
 
 export function LeatherSection() {
   return (
-    <section id="leather" className="bg-orange-100 py-24 lg:py-40">
+    <section id="leather" className="bg-[#fff7ed] py-24 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
