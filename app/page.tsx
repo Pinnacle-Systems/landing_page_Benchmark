@@ -7,6 +7,9 @@ import { SustainabilitySection } from "@/components/sustainability-section";
 import { GlobalSection } from "@/components/global-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
+import { HomeSection } from "@/components/home-section";
+import { LeatherSection } from "@/components/leather-section";
+import { AccessoriesSection } from "@/components/accessories-section";
 
 export default function Home() {
   return (
@@ -16,10 +19,13 @@ export default function Home() {
       <AboutSection />
       <ServicesSection />
       <ProcessSection />
-      {/* <SustainabilitySection /> */}
+      <HomeSection/>
+      <LeatherSection/>
+      <AccessoriesSection/>
+      <SustainabilitySection />
       {/* <GlobalSection /> */}
-      {/* <ContactSection /> */}
-      {/* <Footer /> */}
+      <ContactSection />
+      <Footer />
     </>
   );
 }

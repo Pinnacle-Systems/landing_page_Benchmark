@@ -15,7 +15,7 @@ const fadeUp = {
 
 export function ContactSection() {
   return (
-    <section id="contact" className="bg-background py-24 lg:py-32">
+    <section id="contact" className="bg-orange-100 py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left column */}
@@ -36,9 +36,9 @@ export function ContactSection() {
               custom={1}
               className="font-serif text-3xl font-bold tracking-tight text-foreground md:text-5xl text-balance"
             >
-              Let&apos;s Build Something
+              Feel Free To Contact
               <br />
-              Together
+              Our Team
             </motion.h2>
             <motion.p
               variants={fadeUp}
@@ -63,11 +63,11 @@ export function ContactSection() {
                     Email
                   </p>
                   <p className="text-sm font-semibold text-foreground">
-                    hello@meridiantextiles.com
+                    info@benchmaark.co.in
                   </p>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-sm bg-accent/10">
                   <Phone className="h-5 w-5 text-accent" />
                 </div>
@@ -79,8 +79,8 @@ export function ContactSection() {
                     +91 99442 99777
                   </p>
                 </div>
-              </div>
-              <div className="flex items-center gap-4">
+              </div> */}
+              {/* <div className="flex items-center gap-4">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-sm bg-accent/10">
                   <MapPin className="h-5 w-5 text-accent" />
                 </div>
@@ -92,7 +92,7 @@ export function ContactSection() {
                     Tiruppur, Tamil Nadu, India
                   </p>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
 
             <motion.div
@@ -119,9 +119,9 @@ export function ContactSection() {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="flex flex-col justify-center"
           >
-            <div className="rounded-sm border border-border bg-card p-8 lg:p-10">
+            <div className="rounded-sm border border-border bg-orange-50 p-8 lg:p-10">
               <h3 className="mb-6 font-serif text-xl font-bold text-card-foreground">
-                Send Us a Message
+                A Brief Overview Of The Space You Would Like To Decorate.{" "}
               </h3>
               <form className="flex flex-col gap-5">
                 <div className="grid gap-5 sm:grid-cols-2">
@@ -136,52 +136,55 @@ export function ContactSection() {
                       id="name"
                       type="text"
                       placeholder="Your name"
-                      className="w-full rounded-sm border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                      className="w-full rounded-sm border border-input bg-orange-50 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
                     />
                   </div>
                   <div>
                     <label
-                      htmlFor="company"
+                      htmlFor="email"
                       className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-muted-foreground"
                     >
-                      Company
+                      Email
                     </label>
                     <input
-                      id="company"
-                      type="text"
-                      placeholder="Your company"
-                      className="w-full rounded-sm border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                      id="email"
+                      type="email"
+                      placeholder="your@email.com"
+                      className="w-full rounded-sm border border-input bg-orange-50 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
                     />
                   </div>
                 </div>
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-muted-foreground"
-                  >
-                    Email
-                  </label>
-                  <input
-                    id="email"
-                    type="email"
-                    placeholder="your@email.com"
-                    className="w-full rounded-sm border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
-                  />
+                <div className="grid gap-5 sm:grid-cols-2">
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-muted-foreground"
+                    >
+                      Mobile
+                    </label>
+                    <input
+                      id="email"
+                      type="phone"
+                      placeholder="Your Mobile"
+                      className="w-full rounded-sm border border-input bg-orange-50 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="subject"
+                      className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-muted-foreground"
+                    >
+                      Subject
+                    </label>
+                    <input
+                      id="subject"
+                      type="text"
+                      placeholder="How can we help?"
+                      className="w-full rounded-sm border border-input bg-orange-50 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                    />
+                  </div>
                 </div>
-                <div>
-                  <label
-                    htmlFor="subject"
-                    className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-muted-foreground"
-                  >
-                    Subject
-                  </label>
-                  <input
-                    id="subject"
-                    type="text"
-                    placeholder="How can we help?"
-                    className="w-full rounded-sm border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
-                  />
-                </div>
+
                 <div>
                   <label
                     htmlFor="message"
@@ -193,7 +196,7 @@ export function ContactSection() {
                     id="message"
                     rows={5}
                     placeholder="Tell us about your project..."
-                    className="w-full resize-none rounded-sm border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                    className="w-full resize-none rounded-sm border border-input bg-orange-50 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
                   />
                 </div>
                 <button

@@ -1,25 +1,23 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Logo from "../public/images/bmlogo.png";
+import Image from "next/image";
 
 const footerLinks = {
-  Company: [
-    { label: "About Us", href: "#about" },
-    { label: "Our Process", href: "#process" },
+  "Quick Links": [
+    { label: "Home", href: "#home" },
+    { label: "About", href: "#about" },
+    { label: "Our Services", href: "#services" },
+    { label: "Product Divisions", href: "#apparels" },
     { label: "Sustainability", href: "#sustainability" },
-    { label: "Careers", href: "#" },
+    { label: "Contact", href: "#contact" },
   ],
-  Services: [
-    { label: "Fabrics", href: "#services" },
-    { label: "Design", href: "#services" },
-    { label: "Sourcing", href: "#services" },
-    { label: "Logistics", href: "#services" },
-  ],
+
   Connect: [
-    { label: "Contact Us", href: "#contact" },
-    { label: "LinkedIn", href: "#" },
-    { label: "Instagram", href: "#" },
-    { label: "Digital Showroom", href: "#" },
+    { label: "info@benchmaark.co.in", href: "#contact" },
+    { label: "info@benchmaark.co.in", href: "#" },
+    { label: "No 54/1 - First Floor, KPN colony 3rd Street, Tirupur-641 601",  },
   ],
 };
 
@@ -33,18 +31,24 @@ export function Footer() {
       className="border-t border-border bg-primary py-16"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Brand */}
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           <div>
-            <span className="font-serif text-xl font-bold text-primary-foreground">
-              MERIDIAN
-            </span>
-            <span className="ml-2 text-xs font-medium uppercase tracking-[0.2em] text-primary-foreground/50">
-              Textiles
-            </span>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-primary-foreground/50">
-              Leading supplier of sustainable fashion innovation, providing
-              full-service solutions from concept to collection.
+            <nav>
+              <a href="#home" className="flex items-center gap-2">
+                <Image
+                  src={Logo}
+                  alt="Logo"
+                  className="h-20 bg-white w-auto"
+                  priority
+                />
+              </a>
+            </nav>
+
+            <p className="mt-4  text-sm leading-relaxed text-primary-foreground/50">
+              A Team Of Young And Passionate Professionals Serving Global Brands
+              And Retailers To Build And Grow Their Businesses By Leveraging Our
+              Global Exposure, Techno-Commercial Expertise, Market Intelligence,
+              And The Support Of Cutting-Edge Technologies.
             </p>
           </div>
 
@@ -73,7 +77,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/10 pt-8 sm:flex-row">
           <p className="text-xs text-primary-foreground/30">
-            {new Date().getFullYear()} Meridian Textiles. All rights reserved.
+             Copyright © 2024. Pinnacle Systems
           </p>
           <div className="flex gap-6">
             <a

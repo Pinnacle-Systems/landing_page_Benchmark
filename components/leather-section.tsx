@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -7,27 +6,15 @@ import { motion } from "framer-motion";
 const steps = [
   {
     number: "01",
-    title: "Men’s Clothing",
+    title: "Leather",
     description:
-      "We Specialise In Menswear And Proudly Collaborate With Some Of The Most Recognised Brands Worldwide.Our Expertise Spans Wovens, Denim, Jersey, Sleepwear, And Essentials, Delivering Products For Designer Labels As Well As Global Brand Merchandise.With Strategic Manufacturing Bases In India And Bangladesh,We Are Equipped To Serve All Market Segments, Delivering Comprehensive Solutions That Ensure Smooth, Efficient, And Reliable Retail Delivery Management.",
+      "Timeless, Durable, And Effortlessly Stylish—Leather Remains A Fashion Essential Season After Season.Alongside Premium Leather Craftsmanship From India, We Also Provide High-Quality Leather Production From Bangladesh, Ensuring Versatility And Excellence Across Our Supply Base.Our Range Spans Jackets, Bags, Footwear, And Accessories For Men, Women, And Children, Offering Elevated Design And Enduring Quality Across Every Category.",
   },
   {
     number: "02",
-    title: "Women’s Clothing",
+    title: "Footwear",
     description:
-      "From Entry-Level Price Points To Premium Boutique Collections, We Offer A Complete Range Of Products. Whether It'S Wovens, Denim, Jersey, Knitwear, Or Occasion Wear,Our Clients Trust Us To Design, Develop, And Deliver The Right Product At The Right Price For Their Market.Our Designers Are Among The Best In The Industry, Bringing Sharp Trend Awareness And Meticulous Attention To Detail While Staying True To Each Brand’S Unique Handwriting.Whether Catering To Plus-Size Or Petite, Basics Or Embellished Designs,We Are Your Dependable Private-Label Clothing Manufacturer For A Complete, End-To-End Solution.",
-  },
-  {
-    number: "03",
-    title: "Children’s Clothing",
-    description:
-      "With Extensive Experience In Childrenswear, We Proudly Partner With Many Globally Recognised And Respected Brands.Our Expertise Spans Newborn To Teen Categories,Supported By A Dedicated Team Of Designers And Product Developers Who Ensure Every Style Meets All Technical Specifications And Adheres To The Required Safety And Legal Standards.This Department Covers A Comprehensive Range Of Products, Including Wovens, Knitwear, Jersey, Essentials And Sleepwear.",
-  },
-  {
-    number: "04",
-    title: "Infant Wear",
-    description:
-      "Our Deep Expertise In Infant Wear Has Allowed Us To Partner With Some Of The Most Globally Recognised And Respected Brands.Our Skilled Team Of Designers And Product Developers Oversees Garments From Newborn Through Teen Sizes, Ensuring Each Piece Complies With The Highest Safety, Technical, And Regulatory Requirements Of Childrenswear.Our Comprehensive Range Spans Wovens, Knitwear, Jersey Essentials, Sleepwear, And Partywear—Crafted To Provide Superior Comfort, Quality, And Style For Every Stage And Occasion.",
+      "We Design And Produce A Diverse Range Of Footwear, From Trainers And Boots To Shoes, Sandals, And EVA Flip-Flops And Sliders, Crafted In Premium Leather And PU.With A Focus On Exceptional Comfort, Impeccable Quality, And Perfect Fit, We Deliver Footwear That Combines Style And Performance Across All Segments.",
   },
 ];
 
@@ -40,9 +27,9 @@ const stepVariants = {
   }),
 };
 
-export function ProcessSection() {
+export function LeatherSection() {
   return (
-    <section id="apparels" className="bg-orange-100 py-24 lg:py-32">
+    <section id="leather" className="bg-orange-100 py-24 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -51,11 +38,8 @@ export function ProcessSection() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mb-16"
         >
-          <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-accent">
-            Our Process
-          </p>
           <h2 className="font-serif text-3xl font-bold tracking-tight text-foreground md:text-5xl text-balance">
-            Apparels
+            Leather
           </h2>
         </motion.div>
 

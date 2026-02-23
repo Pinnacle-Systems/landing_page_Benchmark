@@ -4,13 +4,23 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "../public/images/bmlogo.png";
+
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Our Services", href: "#services" },
-  { label: "Product Divisions", href: "#process" },
+  {
+    label: "Product Divisions",
+    href: "#process",
+    dropdown: [
+      { label: "Apparels", href: "#apparels" },
+      { label: "Home Textiles", href: "#home-textiles" },
+      { label: "Leather", href: "#leather" },
+      { label: "Accessories", href: "#accessories" },
+    ],
+  },
   { label: "Sustainability", href: "#sustainability" },
-  { label: "Global", href: "#global" },
+  // { label: "Global", href: "#global" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -30,20 +40,17 @@ export function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-background shadow-sm backdrop-blur-md"
-          : "bg-transparent"
+        scrolled ? "bg-background shadow-sm backdrop-blur-md" : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center  justify-between px-6 py-4 lg:px-8">
         <a href="#home" className="flex  items-center gap-2">
-         
-            <Image
-              src={Logo}
-              alt="Logo"
-              className="h-20 bg-white w-auto"
-              priority
-            />{" "}
+          <Image
+            src={Logo}
+            alt="Logo"
+            className="h-20 bg-white w-auto"
+            priority
+          />{" "}
         </a>
 
         {/* Desktop nav */}
@@ -54,6 +61,7 @@ export function Navbar() {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 + i * 0.05, duration: 0.5 }}
+              className="relative group"
             >
               <a
                 href={link.href}
@@ -65,6 +73,20 @@ export function Navbar() {
               >
                 {link.label}
               </a>
+              {/* Dropdown */}
+              {link.dropdown && (
+                <div className="absolute left-0 top-full mt-2 w-48 rounded-md bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                  {link.dropdown.map((item) => (
+                    <a
+                      key={item.label}
+                      href={item.href}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-black"
+                    >
+                      {item.label}
+                    </a>
+                  ))}
+                </div>
+              )}
             </motion.li>
           ))}
         </ul>

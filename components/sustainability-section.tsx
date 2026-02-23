@@ -14,33 +14,30 @@ const metrics = [
   {
     icon: Droplets,
     value: "90-95%",
-    label: "Water Recycled",
-    description: "Carefully treated and reused through smart technology.",
+    label: "Sustainable Materials",
+    description:
+      "Explore a wide range of sustainable materials including organic cotton, recycled polyester, hemp, bamboo, and eco-friendly finishes.",
   },
   {
     icon: Sun,
     value: "90%+",
-    label: "Renewable Energy",
-    description: "Production powered by solar and wind energy sources.",
+    label: "Sustainability At Benchmaark",
+    description:
+      "We promote responsible fashion by supplying sustainable products globally and introducing eco-friendly initiatives.",
   },
   {
     icon: FlaskConical,
     value: "100%",
-    label: "Certified Chemicals",
-    description: "All chemicals from certified, sustainable sources.",
+    label: "Sustainable Clothing",
+    description: "Our sustainable cotton and viscose are eco-friendly, with upcycling initiatives and eco-certified finishes.",
   },
   {
     icon: Recycle,
     value: "80%",
-    label: "Sustainable Fabrics",
-    description: "Crafted through eco-conscious, sustainable methods.",
+    label: "Sustainable Fashion At Benchmaark",
+    description: "We collaborate with leading sustainable viscose producers, including ECOVERO and LIVAECO, providing traceable, eco-friendly fabrics.",
   },
-  {
-    icon: HeartHandshake,
-    value: "Fair",
-    label: "Ethical Trade",
-    description: "Fair wages, safe conditions, and no child labor.",
-  },
+  
 ];
 
 const metricVariants = {
@@ -54,7 +51,7 @@ const metricVariants = {
 
 export function SustainabilitySection() {
   return (
-    <section id="sustainability" className="bg-secondary py-24 lg:py-32">
+    <section id="sustainability" className="bg-orange-100 py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Text content */}
@@ -83,9 +80,9 @@ export function SustainabilitySection() {
               }}
               className="font-serif text-3xl font-bold tracking-tight text-secondary-foreground md:text-5xl text-balance"
             >
-              Redefining What
+              Our Commitment
               <br />
-              Responsible Means
+              to Sustainability
             </motion.h2>
             <motion.p
               variants={{
@@ -98,11 +95,16 @@ export function SustainabilitySection() {
               }}
               className="mt-6 text-lg leading-relaxed text-muted-foreground"
             >
-              Around 80% of our products are made sustainably with green energy.
-              We&apos;re constantly redefining sustainability, combining
-              eco-friendly practices with innovative design. Our experts work
-              closely with customers from the start, creating clothing that
-              truly resonates.
+              At Benchmaark, Sustainability Is At The Core Of Everything We Do.
+              We Offer A Diverse Range Of Eco-Friendly And Responsibly Sourced
+              Fabric Options Across All Product Divisions. Our Commitment To
+              Sustainable Fashion Includes Materials That Reduce Environmental
+              Impact While Maintaining The Highest Quality And Durability. From
+              Organic Cotton And Recycled Polyester To Innovative Fabrics Like
+              Tencel And Hemp, We Provide Sustainable Solutions That Cater To
+              The Growing Demand For Ethical And Conscious Fashion. Explore Our
+              Collection Of Sustainable Fabrics Designed To Support A Greener
+              And More Responsible Future.
             </motion.p>
 
             {/* Image */}
@@ -133,7 +135,7 @@ export function SustainabilitySection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
-            className="flex flex-col gap-4"
+            className="flex flex-col gap-4 mt-12"
           >
             {metrics.map((metric, i) => (
               <motion.div
@@ -141,16 +143,16 @@ export function SustainabilitySection() {
                 variants={metricVariants}
                 custom={i}
                 whileHover={{ x: -6, transition: { duration: 0.2 } }}
-                className="flex items-start gap-5 rounded-sm border border-border bg-card p-6"
+                className="bg-orange-50 flex items-start gap-5 rounded-sm border border-border  p-6"
               >
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-sm bg-accent/10">
                   <metric.icon className="h-6 w-6 text-accent" />
                 </div>
                 <div>
                   <div className="flex items-baseline gap-3">
-                    <span className="font-serif text-2xl font-bold text-card-foreground">
+                    {/* <span className="font-serif text-2xl font-bold text-card-foreground">
                       {metric.value}
-                    </span>
+                    </span> */}
                     <span className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
                       {metric.label}
                     </span>
