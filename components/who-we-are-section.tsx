@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import img2 from "../public/images/knittedimage.jpg";
+import img3 from "../public/images/meniqu1.jpg";
+import img2 from "../public/images/menique2.jpg";
 import img1 from "../public/images/sewing4.png";
 
 import { motion } from "framer-motion";
@@ -10,8 +11,21 @@ export function WhoWeAreSection() {
     <section className="bg-orange-100  py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6 text-center">
         {/* Top Images */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center mb-12">
           {/* Image 1 */}
+          <motion.div
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="flex justify-center"
+          >
+            <Image
+              src={img3}
+              alt="Benchmaark production"
+              className="rounded-xl shadow-lg w-full max-w-md object-cover hover:scale-105 transition duration-500"
+              priority
+            />
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}

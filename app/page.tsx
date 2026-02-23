@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Navbar />
       <HeroSection />
-      {/* <AboutSection /> */}
+      <AboutSection />
       {/* <ServicesSection /> */}
       {/* <ProcessSection /> */}
       {/* <SustainabilitySection /> */}

@@ -35,12 +35,7 @@ export function AboutSection() {
             custom={1}
             className="text-lg text-gray-700 leading-relaxed w-full"
           >
-            We provide a one-stop solution for all your clothing and product
-            sourcing needs, giving you a complete 360° service from design to
-            delivery across the entire supply chain. Our experienced teams are
-            located across India, Bangladesh, Dubai, Turkey, and the UK,
-            offering everything from creative design to efficient global
-            shipping.
+         We Provide A One-Stop Solution For All Your Clothing And Product Sourcing Needs, Giving You A 360° Service From Design To Delivery Across The Complete Supply Chain. Our Experienced Teams Are Located Across India, Bangladesh, Dubai, Turkey And The UK, Offering Everything From Creative Design To Efficient Shipping.
           </motion.p>
         </motion.div>
 
