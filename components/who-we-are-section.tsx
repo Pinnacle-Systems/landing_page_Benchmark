@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import img3 from "../public/images/meniqu1.jpg";
-import img2 from "../public/images/menique2.jpg";
+import img2 from "../public/Benchmaark/img1313.jpg";
 import img1 from "../public/images/sewing4.png";
 
 import { motion } from "framer-motion";
