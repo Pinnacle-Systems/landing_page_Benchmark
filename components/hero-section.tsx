@@ -49,7 +49,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/70 text-pretty"
+            className=" capitalize mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/70 text-pretty"
           >
             Leading supplier of sustainable fashion innovation. We provide full
             services from concept and design to production and global logistics.

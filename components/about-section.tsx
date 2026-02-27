@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import Image from "next/image";
@@ -24,7 +22,7 @@ const fadeUp = {
 
 export function AboutSection() {
   return (
-    <section id="about" className="bg-[#fff7ed] py-24 lg:py-32">
+    <section id="about" className="bg-[#fff7ed] py-24 lg:py-32 capitalize">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section label */}
         <motion.div
@@ -202,9 +200,9 @@ export function AboutSection() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              "Transparent and flexible services",
-              "Attention to detail and quality",
-              "Strong relationships through the supply chain that add value",
+              "Trust Through Transparency ",
+              "Consistency Through Discipline",
+              "Partnership Beyond Business",
             ].map((item, i) => (
               <motion.div
                 key={i}

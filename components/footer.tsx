@@ -30,7 +30,7 @@ export function Footer() {
       transition={{ duration: 0.8 }}
       className="border-t border-border bg-primary py-16"
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 capitalize">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           <div>
             <nav>
