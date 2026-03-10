@@ -67,7 +67,7 @@ export function AboutSection() {
             <motion.p
               variants={fadeUp}
               custom={0}
-              className="text-lg leading-relaxed text-muted-foreground"
+              className="justalign text-lg leading-relaxed text-muted-foreground"
             >
               We Provide A One-Stop Solution For All Your Clothing And Product
               Sourcing Needs, Giving You A 360° Service From Design To Delivery
@@ -78,7 +78,7 @@ export function AboutSection() {
             <motion.p
               variants={fadeUp}
               custom={1}
-              className="mt-4 text-lg leading-relaxed text-muted-foreground"
+              className="justalign mt-4 text-lg leading-relaxed text-muted-foreground"
             >
               Our commitment to quality, reliability, and sustainability drives
               every decision we make, ensuring we deliver exceptional value from

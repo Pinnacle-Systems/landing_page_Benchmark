@@ -93,7 +93,7 @@ export function SustainabilitySection() {
                   transition: { duration: 0.6, delay: 0.2 },
                 },
               }}
-              className="mt-6 text-lg leading-relaxed text-muted-foreground"
+              className="justalign mt-6 text-lg leading-relaxed text-muted-foreground"
             >
               At Benchmaark, Sustainability Is At The Core Of Everything We Do.
               We Offer A Diverse Range Of Eco-Friendly And Responsibly Sourced
@@ -143,7 +143,7 @@ export function SustainabilitySection() {
                 variants={metricVariants}
                 custom={i}
                 whileHover={{ x: -6, transition: { duration: 0.2 } }}
-                className="bg-orange-50 flex items-start gap-5 rounded-sm border border-border  p-6"
+                className="justalign bg-orange-50 flex items-start gap-5 rounded-sm border border-border  p-6"
               >
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-sm bg-accent/10">
                   <metric.icon className="h-6 w-6 text-accent" />

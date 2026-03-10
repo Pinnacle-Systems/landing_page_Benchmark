@@ -44,7 +44,7 @@ export function Footer() {
               </a>
             </nav>
 
-            <p className="mt-4  text-sm leading-relaxed text-primary-foreground/50">
+            <p className="justalign mt-4  text-sm leading-relaxed text-primary-foreground/50">
               A Team Of Young And Passionate Professionals Serving Global Brands
               And Retailers To Build And Grow Their Businesses By Leveraging Our
               Global Exposure, Techno-Commercial Expertise, Market Intelligence,
