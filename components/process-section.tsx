@@ -9,28 +9,28 @@ const steps = [
     title: "Men’s Clothing",
     slug: "step-1",
     description:
-      "We Specialise In Menswear And Proudly Collaborate With Some Of The Most Recognised Brands Worldwide.Our Expertise Spans Wovens, Denim, Jersey, Sleepwear, And Essentials, Delivering Products For Designer Labels As Well As Global Brand Merchandise.With Strategic Manufacturing Bases In India And Bangladesh,We Are Equipped To Serve All Market Segments, Delivering Comprehensive Solutions That Ensure Smooth, Efficient, And Reliable Retail Delivery Management.",
+      "We Specialise In Menswear And Proudly Collaborate With Some Of The Most Recognised Brands Worldwide. Our Expertise Spans Wovens, Denim, Jersey, Sleepwear, And Essentials, Delivering Products For Designer Labels As Well As Global Brand Merchandise. With Strategic Manufacturing Bases In India And Bangladesh, We Are Equipped To Serve All Market Segments, Delivering Comprehensive Solutions That Ensure Smooth, Efficient, And Reliable Retail Delivery Management.",
   },
   {
     number: "02",
     title: "Women’s Clothing",
     slug: "step-2",
     description:
-      "From Entry-Level Price Points To Premium Boutique Collections, We Offer A Complete Range Of Products. Whether It'S Wovens, Denim, Jersey, Knitwear, Or Occasion Wear,Our Clients Trust Us To Design, Develop, And Deliver The Right Product At The Right Price For Their Market.Our Designers Are Among The Best In The Industry, Bringing Sharp Trend Awareness And Meticulous Attention To Detail While Staying True To Each Brand’S Unique Handwriting.Whether Catering To Plus-Size Or Petite, Basics Or Embellished Designs,We Are Your Dependable Private-Label Clothing Manufacturer For A Complete, End-To-End Solution.",
+      "From Entry-Level Price Points To Premium Boutique Collections, We Offer A Complete Range Of Products. Whether It's Wovens, Denim, Jersey, Knitwear, Or Occasion Wear, Our Clients Trust Us To Design, Develop, And Deliver The Right Product At The Right Price For Their Market. Our Designers Are Among The Best In The Industry, Bringing Sharp Trend Awareness And Meticulous Attention To Detail While Staying True To Each Brand’s Unique Handwriting. Whether Catering To Plus-Size Or Petite, Basics Or Embellished Designs, We Are Your Dependable Private-Label Clothing Manufacturer For A Complete, End-To-End Solution.",
   },
   {
     number: "03",
     title: "Children’s Clothing",
     slug: "step-3",
     description:
-      "With Extensive Experience In Childrenswear, We Proudly Partner With Many Globally Recognised And Respected Brands.Our Expertise Spans Newborn To Teen Categories,Supported By A Dedicated Team Of Designers And Product Developers Who Ensure Every Style Meets All Technical Specifications And Adheres To The Required Safety And Legal Standards.This Department Covers A Comprehensive Range Of Products, Including Wovens, Knitwear, Jersey, Essentials And Sleepwear.",
+      "With Extensive Experience In Childrenswear, We Proudly Partner With Many Globally Recognised And Respected Brands. Our Expertise Spans Newborn To Teen Categories, Supported By A Dedicated Team Of Designers And Product Developers Who Ensure Every Style Meets All Technical Specifications And Adheres To The Required Safety And Legal Standards. This Department Covers A Comprehensive Range Of Products, Including Wovens, Knitwear, Jersey, Essentials And Sleepwear.",
   },
   {
     number: "04",
     title: "Infant Wear",
     slug: "step-4",
     description:
-      "Our Deep Expertise In Infant Wear Has Allowed Us To Partner With Some Of The Most Globally Recognised And Respected Brands.Our Skilled Team Of Designers And Product Developers Oversees Garments From Newborn Through Teen Sizes, Ensuring Each Piece Complies With The Highest Safety, Technical, And Regulatory Requirements Of Childrenswear.Our Comprehensive Range Spans Wovens, Knitwear, Jersey Essentials, Sleepwear, And Partywear—Crafted To Provide Superior Comfort, Quality, And Style For Every Stage And Occasion.",
+      "Our Deep Expertise In Infant Wear Has Allowed Us To Partner With Some Of The Most Globally Recognised And Respected Brands. Our Skilled Team Of Designers And Product Developers Oversees Garments From Newborn Through Teen Sizes, Ensuring Each Piece Complies With The Highest Safety, Technical, And Regulatory Requirements Of Childrenswear. Our Comprehensive Range Spans Wovens, Knitwear, Jersey Essentials, Sleepwear, And Partywear—Crafted To Provide Superior Comfort, Quality, And Style For Every Stage And Occasion.",
   },
 ];
 

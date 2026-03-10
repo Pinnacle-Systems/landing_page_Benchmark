@@ -72,7 +72,7 @@ export function AboutSection() {
               We Provide A One-Stop Solution For All Your Clothing And Product
               Sourcing Needs, Giving You A 360° Service From Design To Delivery
               Across The Complete Supply Chain. Our Experienced Teams Are
-              Located Across India, Bangladesh, Dubai, Turkey And The UK,
+              Located Across India, Bangladesh, Dubai And The UK,
               Offering Everything From Creative Design To Efficient Shipping.
             </motion.p>
             <motion.p
@@ -94,12 +94,12 @@ export function AboutSection() {
                   custom={i + 2}
                   className="border-l-2 border-accent pl-4"
                 >
-                  <p className="font-serif text-3xl font-bold text-foreground">
+                  {/* <p className="font-serif text-3xl font-bold text-foreground">
                     {stat.value}
                   </p>
                   <p className="mt-1 text-sm font-medium text-muted-foreground">
                     {stat.label}
-                  </p>
+                  </p> */}
                 </motion.div>
               ))}
             </div>
