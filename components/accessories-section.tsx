@@ -54,7 +54,7 @@ export function AccessoriesSection() {
                 whileHover={{ x: 8, transition: { duration: 0.2 } }}
                 className="group flex gap-6 rounded-sm border border-border bg-orange-50 p-6 transition-colors hover:border-accent/40"
               >
-                <span className=" text-4xl font-bold text-accent/30 transition-colors group-hover:text-accent">
+                <span className="shrink-0 text-4xl font-bold text-accent/30 transition-colors group-hover:text-accent">
                   {step.number}
                 </span>
                 <div>

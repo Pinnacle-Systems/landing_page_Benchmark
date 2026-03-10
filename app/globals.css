@@ -122,8 +122,11 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  p, li, blockquote {
     text-align: justify;
     text-justify: inter-word;
+    text-align-last: left;
     word-break: break-word;
     hyphens: auto;
   }
