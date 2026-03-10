@@ -16,7 +16,7 @@ const footerLinks = {
 
   Connect: [
     { label: "info@benchmaark.co.in", href: "#contact" },
-    { label: "info@benchmaark.co.in", href: "#" },
+    // { label: "info@benchmaark.co.in", href: "#" },
     { label: "No 54/1 - First Floor, KPN colony 3rd Street, Tirupur-641 601",  },
   ],
 };

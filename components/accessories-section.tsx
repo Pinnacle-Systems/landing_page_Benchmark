@@ -8,7 +8,7 @@ const steps = [
     number: "01",
     title: "Fashion Accessories",
     description:
-      "We Feature A Dedicated Team And A Showroom Fully Committed To Fashion Accessories.Our Curated Collection Encompasses Bags Crafted In PU, Leather, Fabric, And Straw, Alongside Belts, Scarves, Hair Accessories, And Statement Jewellery—Offering A Versatile Range To Elevate Every Wardrobe.Utilizing Both Premium Natural Yarns Such As Cotton, Cotton Blends, Wool, And Linen, As Well As High-Quality Acrylics And Acrylic Blends, We Create Knits In A Variety Of Gauges, From Delicate Fine-Knit To Bold, Chunky Textures.",
+      "We Feature A Dedicated Team And A Showroom Fully Committed To Fashion Accessories. Our Curated Collection Encompasses Bags Crafted In PU, Leather, Fabric, And Straw, Alongside Belts, Scarves, Hair Accessories, And Statement Jewellery—Offering A Versatile Range To Elevate Every Wardrobe. Utilizing Both Premium Natural Yarns Such As Cotton, Cotton Blends, Wool, And Linen, As Well As High-Quality Acrylics And Acrylic Blends, We Create Knits In A Variety Of Gauges, From Delicate Fine-Knit To Bold, Chunky Textures.",
   },
 
 ];
