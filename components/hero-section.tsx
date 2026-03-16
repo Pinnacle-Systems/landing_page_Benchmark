@@ -41,7 +41,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className=" text-4xl font-bold leading-tight tracking-tight text-primary-foreground md:text-5xl lg:text-6xl text-balance"
           >
-            Lets Brands Focus On Sales
+            Let Brands Focus On Sales
             <br />
             Benchmaark Takes Care of Everything Else{" "}
           </motion.h1>
