@@ -187,7 +187,7 @@ export function ServicesSection() {
           </h2>
           <p className="mx-auto mt-4 text-lg text-black">
             We Are A Leading Fabric And Garments Sourcing Unit, Providing Expert
-            Services In Product Sourcing, Development, And Quality Assurance,
+            Services In Product Sourcing, Development And Quality Assurance,
             Driving Positive Business Growth. With Over 20 Years Of Industry
             Experience, Benchmaark Is Equipped To Deliver Unmatched Service And
             Exceptional Value, Ensuring Reliability And Excellence In Every

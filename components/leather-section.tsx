@@ -11,7 +11,7 @@ const steps = [
     slug: "leather-1",
     image: "/leather/leather-1.jpg",
     description:
-      "Timeless, Durable, And Effortlessly Stylish—Leather Remains A Fashion Essential Season After Season. Alongside Premium Leather Craftsmanship From India, We Also Provide High-Quality Leather Production From Bangladesh, Ensuring Versatility And Excellence Across Our Supply Base. Our Range Spans Jackets, Bags, Footwear, And Accessories For Men, Women, And Children, Offering Elevated Design And Enduring Quality Across Every Category.",
+      "Timeless, Durable, And Effortlessly Stylish—Leather Remains A Fashion Essential Season After Season. Alongside Premium Leather Craftsmanship From India, We Also Provide High-Quality Leather Production From Bangladesh, Ensuring Versatility And Excellence Across Our Supply Base. Our Range Spans Jackets, Bags, Footwear, And Accessories For Men, Women And Children, Offering Elevated Design And Enduring Quality Across Every Category.",
   },
   {
     number: "02",
@@ -19,7 +19,7 @@ const steps = [
     slug: "leather-2",
     image: "/leather/leather-1.jpg",
     description:
-      "We Design And Produce A Diverse Range Of Footwear, From Trainers And Boots To Shoes, Sandals, And EVA Flip-Flops And Sliders, Crafted In Premium Leather And PU. With A Focus On Exceptional Comfort, Impeccable Quality, And Perfect Fit, We Deliver Footwear That Combines Style And Performance Across All Segments.",
+      "We Design And Produce A Diverse Range Of Footwear, From Trainers And Boots To Shoes, Sandals, And EVA Flip-Flops And Sliders, Crafted In Premium Leather And PU. With A Focus On Exceptional Comfort, Impeccable Quality And Perfect Fit, We Deliver Footwear That Combines Style And Performance Across All Segments.",
   },
 ];
 
