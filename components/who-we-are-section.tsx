@@ -83,7 +83,7 @@ export function WhoWeAreSection() {
         >
           A team of young and passionate professionals serving global brands and
           retailers to build and grow their businesses by leveraging our global
-          exposure, techno-commercial expertise, market intelligence, and the
+          exposure, techno-commercial expertise, market intelligence and the
           support of cutting-edge technologies.
         </motion.p>
         {/* Features */}
@@ -144,7 +144,7 @@ export function WhoWeAreSection() {
 
           {/* Description */}
           <p className="mx-auto mt-6 max-w-3xl text-gray-600 leading-relaxed">
-            We are experienced in meeting our customers' full product and supply
+            We are experienced in meeting our customer's full product and supply
             chain needs, from design to delivery. We have been providing a
             versatile and transparent service to customers for over 10 years and
             pride ourselves on delivering the best possible service in

@@ -137,19 +137,19 @@ const services = [
     icon: Layers,
     title: "Fabric Sourcing",
     description:
-      "We offer trend-based fabric development, access to global mills in India and Bangladesh, cost-effective material options, and fabric quality monitoring. Our optimized supply chain ensures seamless production flow and high-quality materials at the best prices.",
+      "We offer trend-based fabric development, access to global mills in India and Bangladesh, cost-effective material options and fabric quality monitoring. Our optimized supply chain ensures seamless production flow and high-quality materials at the best prices.",
   },
   {
     icon: Paintbrush,
     title: "Product Design And Development",
     description:
-      "We offer bespoke design solutions for our global customer base. Our design teams specialize in all product levels, and we are capable of creating new ranges or following your existing designs. Our developers work closely with supply partners to ensure smooth sampling, orders, and production.",
+      "We offer bespoke design solutions for our global customer base. Our design teams specialize in all product levels, and we are capable of creating new ranges or following your existing designs. Our developers work closely with supply partners to ensure smooth sampling, orders and production.",
   },
   {
     icon: Scissors,
     title: "Apparel Sourcing",
     description:
-      "We streamline sourcing by boosting efficiency, ensuring quality, and cutting costs. Leveraging our global network, we connect you with top manufacturers to deliver superior products. Committed to ethical, sustainable practices, we meet consumer demands while securing competitive prices without compromising quality. By tracking market trends, we help brands stay competitive and profitable, ensuring top manufacturing standards.",
+      "We streamline sourcing by boosting efficiency, ensuring quality and cutting costs. Leveraging our global network, we connect you with top manufacturers to deliver superior products. Committed to ethical, sustainable practices, we meet consumer demands while securing competitive prices without compromising quality. By tracking market trends, we help brands stay competitive and profitable, ensuring top manufacturing standards.",
   },
   {
     icon: ShieldCheck,

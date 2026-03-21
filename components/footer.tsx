@@ -47,7 +47,7 @@ export function Footer() {
             <p className="justalign mt-4  text-sm leading-relaxed text-primary-foreground/50">
               A Team Of Young And Passionate Professionals Serving Global Brands
               And Retailers To Build And Grow Their Businesses By Leveraging Our
-              Global Exposure, Techno-Commercial Expertise, Market Intelligence,
+              Global Exposure, Techno-Commercial Expertise, Market Intelligence
               And The Support Of Cutting-Edge Technologies.
             </p>
           </div>
@@ -77,7 +77,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/10 pt-8 sm:flex-row">
           <p className="text-xs text-primary-foreground/30">
-             Copyright © 2024. Pinnacle Systems
+             Copyright © 2026. Pinnacle Systems
           </p>
           <div className="flex gap-6">
             <a

@@ -80,7 +80,7 @@ export function AboutSection() {
               custom={1}
               className="justalign mt-4 text-lg leading-relaxed text-muted-foreground"
             >
-              Our commitment to quality, reliability, and sustainability drives
+              Our commitment to quality, reliability and sustainability drives
               every decision we make, ensuring we deliver exceptional value from
               concept to final product.
             </motion.p>
@@ -115,11 +115,11 @@ export function AboutSection() {
 
             <div className="space-y-6">
               {[
-                "One team, one vision: we can achieve more together",
-                "Sustainable and socially responsible: respect for environment, community and economy",
-                "Customer centric:The customer is at the heart of all we do",
+                "One team, one vision : we can achieve more together",
+                "Sustainable and socially responsible : respect for environment, community and economy",
+                "Customer centric : The customer is at the heart of all we do",
                 "Transparent And Honest In Driving The Success Of The Entire Supply Chain",
-                "Innovation And Technology: Committed To The Future Of Supply Chain Management",
+                "Innovation And Technology : Committed To The Future Of Supply Chain Management",
               ].map((item, i) => (
                 <motion.div
                   key={i}
@@ -172,7 +172,7 @@ export function AboutSection() {
                 "We Are A Dynamic, Vibrant And Multicultural Team",
                 "Customer Success Is At The Core Of Everything We Do",
                 "Taking Business Seriously, Always With A Smile!",
-                "Innovation Leads Us, And Teamwork Strengthens Us",
+                "Innovation Leads Us And Teamwork Strengthens Us",
               ].map((item, i) => (
                 <motion.div
                   key={i}

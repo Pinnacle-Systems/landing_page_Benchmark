@@ -16,7 +16,7 @@ const metrics = [
     value: "90-95%",
     label: "Sustainable Materials",
     description:
-      "Explore a wide range of sustainable materials including organic cotton, recycled polyester, hemp, bamboo, and eco-friendly finishes.",
+      "Explore a wide range of sustainable materials including organic cotton, recycled polyester, hemp, bamboo and eco-friendly finishes.",
   },
   {
     icon: Sun,
