@@ -57,7 +57,7 @@ export function ImageGallery({ images, folderName, title }: ImageGalleryProps) {
                 alt={`${title} - ${index + 1}`}
                 width={500}
                 height={500}
-                className="h-full w-full object-cover object-center group-hover:opacity-75 transition-opacity duration-300"
+                className="object-cover object-center group-hover:opacity-75 transition-opacity duration-300"
               />
             </div>
           </motion.div>

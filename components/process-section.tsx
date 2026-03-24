@@ -100,7 +100,7 @@ export function ProcessSection() {
             className="hidden lg:flex flex-col gap-6"
           >
             <div className="hidden lg:flex flex-col gap-6">
-              <Link href="/products/step-1" className="relative h-[320px] w-[300px] overflow-hidden rounded-lg group">
+              <Link href="/products/step-1" className="relative h-[380px] w-[300px] overflow-hidden rounded-lg group">
                 <Image
                   src="/products/step-1.jpg"
                   alt="Men's Clothing"
@@ -112,7 +112,7 @@ export function ProcessSection() {
                 </div>
               </Link>
 
-              <Link href="/products/step-2" className="relative h-[320px] w-[300px] overflow-hidden rounded-lg group">
+              <Link href="/products/step-2" className="relative  h-[380px] w-[300px] overflow-hidden rounded-lg group">
                 <Image
                   src="/products/step-2.jpg"
                   alt="Women's Clothing"
@@ -124,7 +124,7 @@ export function ProcessSection() {
                 </div>
               </Link>
 
-              <Link href="/products/step-3" className="relative h-[320px] w-[300px] overflow-hidden rounded-lg group">
+              <Link href="/products/step-3" className="relative  h-[380px] w-[300px] overflow-hidden rounded-lg group">
                 <Image
                   src="/products/step-3.jpg"
                   alt="Children's Clothing"
@@ -136,7 +136,7 @@ export function ProcessSection() {
                 </div>
               </Link>
 
-              <Link href="/products/step-4" className="relative h-[320px] w-[300px] overflow-hidden rounded-lg group">
+              <Link href="/products/step-4" className="relative  h-[380px] w-[300px] overflow-hidden rounded-lg group">
                 <Image
                   src="/products/step-4.jpg"
                   alt="Infant Wear"
