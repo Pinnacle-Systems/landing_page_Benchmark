@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const steps = [
   {
@@ -52,7 +53,7 @@ export function AccessoriesSection() {
                 variants={stepVariants}
                 custom={i}
                 whileHover={{ x: 8, transition: { duration: 0.2 } }}
-                className="justalign group flex gap-6 rounded-sm border border-border bg-orange-50 p-6 transition-colors hover:border-accent/40"
+                className="justalign group flex  h-full gap-6 rounded-sm border border-border bg-orange-50 p-6 transition-colors hover:border-accent/40"
               >
                 <span className="shrink-0 text-4xl font-bold text-accent/30 transition-colors group-hover:text-accent">
                   {step.number}
@@ -77,15 +78,37 @@ export function AccessoriesSection() {
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="relative hidden overflow-hidden rounded-sm lg:block"
           >
-            <Image
+            {/* <Image
               src="/images/design-studio.jpg"
               alt="Fashion design studio workspace"
               fill
               className="object-cover"
-            />
+            /> */}
+             <div className="hidden lg:flex flex-col gap-6">
+              <Link
+                href="/access-products/step-1_access"
+                className="relative h-[320px] w-[300px] overflow-hidden rounded-lg group"
+              >
+                <Image
+                  src="/images/design-studio.jpg"
+                  alt="Men's Clothing"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span className="text-white font-medium">View Products</span>
+                </div>
+              </Link>
+
+           
+            </div>
           </motion.div>
         </div>
       </div>
     </section>
   );
 }
+
+
+
+              // src="/images/design-studio.jpg"
