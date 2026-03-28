@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export function WhoWeAreSection() {
   return (
-    <section className="bg-[#F5F5F5]  py-16 md:py-24 capitalize">
+    <section className="bg-[#F8F8FF]  py-16 md:py-24 capitalize">
       <div className="mx-auto max-w-6xl px-6 text-center">
         {/* Top Images */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center mb-12">

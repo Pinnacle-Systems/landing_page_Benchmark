@@ -22,7 +22,7 @@ const fadeUp = {
 
 export function AboutSection() {
   return (
-    <section id="about" className="bg-white py-24 lg:py-32 capitalize">
+    <section id="about" className="bg-[#F8F8FF] py-24 lg:py-32 capitalize">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section label */}
         <motion.div

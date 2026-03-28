@@ -26,7 +26,7 @@ export function HomeSection() {
   return (
     <section
       id="home-textiles"
-      className="bg-white py-24 lg:py-40 capitalize"
+      className="bg-[#F8F8FF] py-24 lg:py-40 capitalize"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div

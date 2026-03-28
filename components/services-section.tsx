@@ -170,7 +170,7 @@ const cardVariants = {
 
 export function ServicesSection() {
   return (
-    <section id="services" className="bg-white py-24 lg:py-32 capitalize">
+    <section id="services" className="bg-[#F8F8FF] py-24 lg:py-32 capitalize">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
