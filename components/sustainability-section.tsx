@@ -51,7 +51,7 @@ const metricVariants = {
 
 export function SustainabilitySection() {
   return (
-    <section id="sustainability" className="bg-[#fff7ed] py-24 lg:py-32 capitalize">
+    <section id="sustainability" className="bg-white py-24 lg:py-32 capitalize">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Text content */}
@@ -143,7 +143,7 @@ export function SustainabilitySection() {
                 variants={metricVariants}
                 custom={i}
                 whileHover={{ x: -6, transition: { duration: 0.2 } }}
-                className="justalign bg-orange-50 flex items-start gap-5 rounded-sm border border-border  p-6"
+                className="justalign bg-white flex items-start gap-5 rounded-sm border border-border  p-6"
               >
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-sm bg-accent/10">
                   <metric.icon className="h-6 w-6 text-accent" />

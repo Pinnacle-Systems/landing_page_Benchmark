@@ -15,7 +15,7 @@ const fadeUp = {
 
 export function ContactSection() {
   return (
-    <section id="contact" className="bg-[#fff7ed] py-24 lg:py-32 capitalize">
+    <section id="contact" className="bg-white py-24 lg:py-32 capitalize">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left column */}
@@ -119,7 +119,7 @@ export function ContactSection() {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="flex flex-col justify-center"
           >
-            <div className="rounded-sm border border-border bg-orange-50 p-8 lg:p-10">
+            <div className="rounded-sm border border-border bg-white p-8 lg:p-10">
               <h3 className="mb-6 font-serif text-xl font-bold text-card-foreground">
                 A Brief Overview Of The Space You Would Like To Decorate.{" "}
               </h3>
@@ -136,7 +136,7 @@ export function ContactSection() {
                       id="name"
                       type="text"
                       placeholder="Your name"
-                      className="w-full rounded-sm border border-input bg-orange-50 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                      className="w-full rounded-sm border border-input bg-white px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
                     />
                   </div>
                   <div>
@@ -150,7 +150,7 @@ export function ContactSection() {
                       id="email"
                       type="email"
                       placeholder="your@email.com"
-                      className="w-full rounded-sm border border-input bg-orange-50 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                      className="w-full rounded-sm border border-input bg-white px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
                     />
                   </div>
                 </div>
@@ -166,7 +166,7 @@ export function ContactSection() {
                       id="email"
                       type="phone"
                       placeholder="Your Mobile"
-                      className="w-full rounded-sm border border-input bg-orange-50 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                      className="w-full rounded-sm border border-input bg-white px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
                     />
                   </div>
                   <div>
@@ -180,7 +180,7 @@ export function ContactSection() {
                       id="subject"
                       type="text"
                       placeholder="How can we help?"
-                      className="w-full rounded-sm border border-input bg-orange-50 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                      className="w-full rounded-sm border border-input bg-white px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
                     />
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export function ContactSection() {
                     id="message"
                     rows={5}
                     placeholder="Tell us about your project..."
-                    className="w-full resize-none rounded-sm border border-input bg-orange-50 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                    className="w-full resize-none rounded-sm border border-input bg-white px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
                   />
                 </div>
                 <button

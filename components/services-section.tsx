@@ -170,7 +170,7 @@ const cardVariants = {
 
 export function ServicesSection() {
   return (
-    <section id="services" className="bg-[#fff7ed] py-24 lg:py-32 capitalize">
+    <section id="services" className="bg-white py-24 lg:py-32 capitalize">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -207,7 +207,7 @@ export function ServicesSection() {
               variants={cardVariants}
               custom={i}
               whileHover={{ y: -6, transition: { duration: 0.25 } }}
-              className="group rounded-sm border border-orange-200 bg-orange-50 p-8 transition-colors hover:bg-orange-foreground/10"
+              className="group rounded-sm border bg-white p-8 transition-colors hover:bg-orange-foreground/10"
             >
               <service.icon className="mb-5 h-8 w-8 text-accent" />
               <h3 className="mb-3 text-lg font-semibold text-black">

@@ -34,7 +34,7 @@ const stepVariants = {
 
 export function LeatherSection() {
   return (
-    <section id="leather" className="bg-[#fff7ed] py-24 lg:py-40 capitalize">
+    <section id="leather" className="bg-white py-24 lg:py-40 capitalize">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -62,7 +62,7 @@ export function LeatherSection() {
                 variants={stepVariants}
                 custom={i}
                 whileHover={{ x: 8, transition: { duration: 0.2 } }}
-                className="justalign group flex h-full gap-6 rounded-sm border border-border bg-orange-50 p-6 transition-colors hover:border-accent/40"
+                className="justalign group flex h-full gap-6 rounded-sm border border-border bg-white p-6 transition-colors hover:border-accent/40"
               >
                 <span className="shrink-0 text-4xl font-bold text-accent/30 transition-colors group-hover:text-accent">
                   {step.number}
