@@ -87,13 +87,13 @@ export function AccessoriesSection() {
              <div className="hidden lg:flex flex-col gap-6">
               <Link
                 href="/access-products/step-1_access"
-                className="relative h-[320px] w-[300px] overflow-hidden rounded-lg group"
+                className="relative h-[320px] w-[300px]  overflow-hidden rounded-lg group"
               >
                 <Image
-                  src="/images/design-studio.jpg"
+                  src="/images/access.jpeg"
                   alt="Men's Clothing"
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-cover transition-transform duration-500 group-hover:scale-130  scale-110"
                 />
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <span className="text-white font-medium">View Products</span>

@@ -9,7 +9,7 @@ const steps = [
     number: "01",
     title: "Home Textiles",
     description:
-      "Our Home Textiles Portfolio Features Premium Organic Cotton Products, Including Sheet Sets, Duvets, Shams And Pillowcases Offered In Thread Counts From 200 To 600, Alongside Plush Towels Ranging From 400 To 800 GSM. Our Capabilities Extend To Jersey Sheet Sets, Duvets And Shams, Along With Premium Flannel Bedding Collections. In Addition, We Produce Luxurious Robes In Terry, Waffle And Interlock Constructions, Complemented By An Elegant Selection Of Throws And Blankets Crafted In A Variety Of Refined Weaves.",
+      "Our Home Textiles Portfolio Features Premium Organic Cotton Products, Including Sheet Sets, Duvets, Shams And Pillowcases Offered In Thread Counts From 20's to 80's , Alongside Plush Towels Ranging From 400 To 800 GSM. Our Capabilities Extend To Jersey Sheet Sets, Duvets And Shams, Along With Premium Flannel Bedding Collections. In Addition, We Produce Luxurious Robes In Terry, Waffle And Interlock Constructions, Complemented By An Elegant Selection Of Throws And Blankets Crafted In A Variety Of Refined Weaves.",
   },
 ];
 
