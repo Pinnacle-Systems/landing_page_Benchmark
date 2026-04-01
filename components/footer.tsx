@@ -16,8 +16,12 @@ const footerLinks = {
 
   Connect: [
     { label: "info@benchmaark.co.in", href: "#contact" },
-    // { label: "info@benchmaark.co.in", href: "#" },
-    { label: "No 54/1 - First Floor, KPN colony 3rd Street, Tirupur-641 601",  },
+    { label: "Corporate Offices",  },
+    { label: "India - Tirupur , Delhi",  },
+    { label: "Dubai",  },
+    
+    { label: "Bangladesh",  },
+    
   ],
 };
 
@@ -77,7 +81,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/10 pt-8 sm:flex-row">
           <p className="text-xs text-primary-foreground/30">
-             Copyright © 2026. Pinnacle Systems
+            Copyright © 2026. Pinnacle Systems
           </p>
           <div className="flex gap-6">
             <a

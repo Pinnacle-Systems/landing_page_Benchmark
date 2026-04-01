@@ -161,7 +161,7 @@ export function WhoWeAreSection() {
               "Integrity, Trust & Ethics",
               "Enriched Trade Knowledge",
               "Hassle Free Supply Chain Management",
-              "Smooth SupplyChain Integration",
+              "Sustainability-Driven Supply Chain",
             ].map((item, i) => (
               <div
                 key={i}
